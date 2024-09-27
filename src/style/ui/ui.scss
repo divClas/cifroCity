@@ -1,0 +1,531 @@
+@import "../vars/vars.scss";
+@import "../helpers/helpers.scss";
+//кнопки
+.buttons {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 12px 12px;
+}
+.button--catalog {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5625rem 0.75rem;
+  gap: 0.25rem;
+  border-radius: 6.25rem;
+  border: 1px solid $accentsRed;
+  align-items: center;
+  color: $accentsRed;
+  transition: background-color 0.15s, color 0.15s;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.02rem;
+
+  &:hover {
+    background-color: $accentsRed;
+    color: $white;
+  }
+}
+.button--product {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid $primaryGray;
+  border-radius: 6.25rem;
+  transition: border-color 0.15s;
+  &:hover {
+    border-color: $primaryActiveGray;
+  }
+}
+
+.button--buy {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+  border-radius: 0.75rem;
+  &.bg--red {
+    background-color: $accentsRed;
+  }
+  &.color--white {
+    color: $white;
+  }
+  &.bg--pink {
+    background-color: $pinkLigth;
+    transition: background-color 0.15s;
+    &:hover {
+      background-color: $pinkHover;
+    }
+  }
+  &.color--red {
+    color: $accentsRed;
+  }
+  &.bg--gray {
+    background-color: $secondaryGray;
+    transition: background-color 0.15s;
+    &:hover {
+      background-color: $primaryGray;
+    }
+  }
+}
+
+.button--social {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: $secondaryGray;
+  transition: background-color 0.15s;
+  display: flex;
+  svg {
+    transition: fill 0.15s;
+  }
+  &.icon--telegram {
+    &:hover {
+      background: rgba(36, 161, 221, 1);
+    }
+  }
+  &.icon--whatsapp {
+    &:hover {
+      background: linear-gradient(180deg, #61fd7d 0%, #25cf43 100%);
+    }
+  }
+  &.icon--vk {
+    &:hover {
+      background: rgba(0, 120, 255, 1);
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #ffffff; // Change to white on hover, adjust if needed
+      }
+    }
+  }
+}
+
+.button--back--big {
+  padding: 1.5625rem;
+  box-shadow: 0px 12px 16px -4px rgba(41, 41, 41, 0.08);
+  border-radius: 2rem;
+  display: flex;
+  svg {
+    transition: fill 0.15s;
+  }
+  &:hover {
+    svg {
+      path {
+        stroke: $redAccentsHover;
+      }
+    }
+  }
+}
+.button--back--small {
+  display: flex;
+  padding: 0.75rem;
+  border-radius: 2.5rem;
+  background: $secondaryGray;
+  transition: background 0.15s;
+  &:hover {
+    background: $primaryGray;
+  }
+}
+.social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.catalog-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  transition: background 0.15s;
+  max-width: 19rem;
+  width: 100%;
+  &.big {
+    max-width: 21.125rem;
+    padding: 1.5rem 1.75rem;
+  }
+
+  &__content {
+    &--right {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      svg {
+        path {
+          transition: fill 0.15s;
+        }
+      }
+    }
+    &--left {
+      display: flex;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: left;
+  }
+  &:hover {
+    background: $white;
+    .catalog-button__content--right {
+      svg {
+        path {
+          fill: rgba(41, 41, 41, 1);
+        }
+      }
+    }
+  }
+}
+
+.сhose--option {
+  padding: 0.75rem 1rem;
+  background: $secondaryGray;
+  transition: background 0.15s;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  text-align: left;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid $white;
+  &:hover {
+    background: $primaryGray;
+    border: 0.0625rem solid $white;
+  }
+  &.active {
+    background: white;
+    border: 0.0625rem solid $primaryActiveGray;
+  }
+}
+.сhose--option--color {
+  border-radius: 6.25rem;
+  transition: border 0.15s;
+  padding: 6px;
+  border: 1px solid $white;
+  box-sizing: border-box;
+
+  .color {
+    background: $pink;
+    padding: 0.375rem;
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 100px;
+  }
+  &:hover {
+    border: 1px solid $primaryActiveGray;
+  }
+  &.active {
+    border: 2px solid $primaryActiveGray;
+    .color {
+      padding: 0.25rem;
+    }
+  }
+}
+
+.search {
+  max-width: 360px;
+  width: 100%;
+
+  &__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: 1px solid $primaryGray;
+    border-radius: 0.75rem;
+    max-width: 22.5rem;
+    width: 100%;
+    transition: border 0.15s;
+
+    &:hover {
+      border: 1px solid $primaryActiveGray;
+    }
+
+    &:focus-within {
+      border: 1px solid $primaryActiveGray;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    pointer-events: none;
+
+    &--search {
+      left: 0.625rem;
+    }
+
+    &--delete {
+      right: 0.625rem;
+      display: none; /* Иконка скрыта по умолчанию */
+      pointer-events: auto; /* Разрешаем взаимодействие */
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &:not(:placeholder-shown) + .search__icon--delete {
+      display: block; /* Показываем иконку удаления, когда есть текст */
+    }
+  }
+}
+.inputs {
+  max-width: 22.5rem;
+  width: 100%;
+
+  &__field {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    background-color: $secondaryGray;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.15s, background-color 0.15s;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $primaryGray;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primaryActiveGray;
+      background-color: $white;
+    }
+
+    &.erorr {
+      background-color: $pinkLigth !important;
+      border-color: $criticalRed !important;
+      color: $criticalRed !important;
+      & + .inputs__label {
+        color: $criticalRed;
+      }
+      &:hover,
+      &:focus {
+        background-color: $pinkLigth !important;
+        border-color: $criticalRed !important;
+      }
+    }
+
+    &:focus + .inputs__label,
+    &:not(:placeholder-shown) + .inputs__label {
+      transform: translateY(-1.5rem);
+      font-size: 0.75rem;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: $primaryActiveGray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+}
+.tab {
+  padding: 1rem 1.25rem;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: $secondaryGray;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-align: center;
+  transition: background 0.15s;
+  &:hover {
+    background: $primaryGray;
+  }
+  &.active {
+    background-color: white;
+    box-shadow: 0px 4px 16px -8px rgba(41, 41, 41, 0.04);
+  }
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+.medium {
+  font-weight: 500;
+}
+.heading {
+  &--1 {
+    font-weight: 700;
+    @include adaptiv-font(3rem, 1.75rem);
+    font-weight: 700;
+    line-height: 1.08;
+    text-align: left;
+  }
+  &--2 {
+    @include adaptiv-font(2rem, 1.5rem);
+    line-height: 1.12;
+  }
+  &--3 {
+    @include adaptiv-font(1.5rem, 1.125rem);
+    line-height: 1.16;
+  }
+}
+
+.price {
+  @include adaptiv-font(1.25rem, 1rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+.body {
+  @include adaptiv-font(1rem, 0.875rem);
+  font-weight: 700;
+  line-height: 1.42;
+}
+.label {
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+.gray-bg {
+  background-color: $secondaryGray;
+  width: 100%;
+  height: 100vh;
+}
+.cards {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 21.6875rem 21.6875rem 21.6875rem 21.6875rem;
+  gap: 2.0625rem;
+}
+.card {
+  max-width: 20.4375rem;
+  &--item {
+    background-color: $white;
+    padding: 0.75rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 1.25rem;
+    transition: box-shadow 0.15s;
+    &:hover {
+      box-shadow: 0px 16px 16px -8px rgba(235, 235, 235, 1);
+    }
+    &__top {
+      &__label {
+        display: flex;
+        align-items: center;
+        padding: 0.25rem;
+        border-radius: 1.25rem;
+        width: fit-content;
+        gap: 0.25rem;
+        &.discount {
+          background-color: $accentsRed;
+        }
+        &.new {
+          background-color: $yellow;
+        }
+        &.top {
+          background-color: $secondaryGray;
+        }
+        &.product--date {
+          background-color: $accentsRed;
+          position: relative;
+          &::before {
+            content: "-15%";
+            position: absolute;
+            color: rgb(223, 32, 35);
+            background-color: rgba(223, 32, 35, 0.12);
+            padding: 0.25rem 0.25rem 0.25rem 4rem;
+            border-radius: 1.25rem;
+            left: 26px;
+            z-index: 0;
+          }
+        }
+      }
+    }
+    &__img {
+      display: flex;
+      justify-content: center;
+      padding-top: 0.9237rem;
+
+      img {
+        object-fit: cover;
+        max-width: 9.9619rem;
+        max-height: 14.2819rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__bottom {
+      padding-top: 3.1694rem;
+      .receiving {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        .text {
+          font-size: 0.875rem;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
+          color: $grayTertiary;
+        }
+      }
+      .product--name {
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.25;
+        color: $primaryActiveGray;
+      }
+      .product--price {
+        padding-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        &__new {
+          font-size: 1.25rem;
+          font-weight: 700;
+          line-height: 1.2;
+          letter-spacing: 0.02em;
+          &.color--red {
+            color: $accentsRed;
+          }
+        }
+        &__old {
+          position: relative;
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.25;
+          letter-spacing: 0.02em;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $accentsRed;
+            top: 50%;
+            bottom: 50%;
+          }
+        }
+      }
+      .button {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

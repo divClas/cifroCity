@@ -1,0 +1,25 @@
+$maxWidth: 1920;
+$s1400: 1400px;
+$s1280: 1280px;
+$s970: 970px;
+$s640: 640px;
+$s540: 540px;
+
+$primaryGray: rgba(41, 41, 41, 0.12);
+$secondaryGray: rgba(41, 41, 41, 0.05);
+$primaryActiveGray: rgba(41, 41, 41, 1);
+$grayTertiary: rgba(41, 41, 41, 0.5);
+$accentsRed: rgba(223, 32, 35, 1);
+$redAccentsHover: rgba(205, 29, 32, 1);
+$criticalRed: rgba(255, 0, 4, 1);
+$white: rgba(255, 255, 255, 1);
+$pinkLigth: rgba(223, 32, 35, 0.06);
+$pinkHover: rgba(223, 32, 35, 0.12);
+$pink: rgba(255, 192, 203, 1);
+
+$yellow: rgba(250, 195, 0, 1);
+/// TODO: перенсти в ui 
+.color--white {
+  color: $white;
+  z-index: 2;
+}
