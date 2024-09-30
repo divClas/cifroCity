@@ -1,559 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Цифросити</title>
-    <link rel="stylesheet" href="src/style/main.scss" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="buttons">
-        <button class="button button--catalog">
-          <span clss="button__icon"
-            ><img class="icon" src="/src/assets/img/menu.svg" alt="иконка меню"
-          /></span>
-          <span class="button__text">Каталог</span>
-        </button>
 
-        <button class="button button--product">
-          <span class="button__text">Ноутбуки и планшеты</span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Цифросити</title>
+  <link rel="stylesheet" href="src/style/main.scss" />
+</head>
 
-        <button class="button button--buy bg--red color--white">
-          <span class="button__text">Купить</span>
-        </button>
-        <button class="button button--buy bg--pink color--red">
-          <span class="button__text">Купить</span>
-        </button>
-        <button class="button button--buy bg--gray">
-          <span class="button__text">Купить</span>
-        </button>
-        <div class="social">
-          <button class="button button--social icon--telegram">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Frame">
-                <g id="Group">
-                  <path
-                    id="Vector"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.68044 8.91762C6.15433 6.97467 9.13267 5.68362 10.6282 5.05728C14.8848 3.2805 15.7796 2.97372 16.3548 2.96094C16.4827 2.96094 16.7639 2.9865 16.9556 3.13989C17.109 3.26772 17.1473 3.43389 17.1729 3.56172C17.1985 3.68954 17.224 3.95798 17.1985 4.1625C16.9684 6.59119 15.9713 12.484 15.46 15.1939C15.2427 16.3443 14.8209 16.7278 14.4119 16.7661C13.5171 16.8428 12.8396 16.1781 11.9832 15.6157C10.6282 14.7337 9.87406 14.184 8.55746 13.3148C7.03633 12.3178 8.02059 11.7681 8.8898 10.8733C9.11989 10.6433 13.0441 7.06414 13.1208 6.74458C13.1336 6.70623 13.1336 6.55284 13.0441 6.47614C12.9547 6.39945 12.8268 6.42501 12.7246 6.45058C12.584 6.47614 10.4365 7.90779 6.2566 10.7327C5.64303 11.1546 5.09338 11.3591 4.59486 11.3463C4.04521 11.3335 2.99704 11.0395 2.20452 10.7839C1.24583 10.4771 0.478874 10.3109 0.542787 9.77405C0.581135 9.49283 0.964612 9.21161 1.68044 8.91762Z"
-                    fill="#292929"
-                  />
-                </g>
+<body>
+  <div class="container">
+    <div class="buttons">
+      <button class="button button--catalog">
+        <span clss="button__icon"><img class="icon" src="/src/assets/img/menu.svg" alt="иконка меню" /></span>
+        <span class="button__text">Каталог</span>
+      </button>
+
+      <button class="button button--product">
+        <span class="button__text">Ноутбуки и планшеты</span>
+      </button>
+
+      <button class="button button--buy bg--red color--white">
+        <span class="button__text">Купить</span>
+      </button>
+      <button class="button button--buy bg--pink color--red">
+        <span class="button__text">Купить</span>
+      </button>
+      <button class="button button--buy bg--gray">
+        <span class="button__text">Купить</span>
+      </button>
+      <div class="social">
+        <button class="button button--social icon--telegram">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Frame">
+              <g id="Group">
+                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.68044 8.91762C6.15433 6.97467 9.13267 5.68362 10.6282 5.05728C14.8848 3.2805 15.7796 2.97372 16.3548 2.96094C16.4827 2.96094 16.7639 2.9865 16.9556 3.13989C17.109 3.26772 17.1473 3.43389 17.1729 3.56172C17.1985 3.68954 17.224 3.95798 17.1985 4.1625C16.9684 6.59119 15.9713 12.484 15.46 15.1939C15.2427 16.3443 14.8209 16.7278 14.4119 16.7661C13.5171 16.8428 12.8396 16.1781 11.9832 15.6157C10.6282 14.7337 9.87406 14.184 8.55746 13.3148C7.03633 12.3178 8.02059 11.7681 8.8898 10.8733C9.11989 10.6433 13.0441 7.06414 13.1208 6.74458C13.1336 6.70623 13.1336 6.55284 13.0441 6.47614C12.9547 6.39945 12.8268 6.42501 12.7246 6.45058C12.584 6.47614 10.4365 7.90779 6.2566 10.7327C5.64303 11.1546 5.09338 11.3591 4.59486 11.3463C4.04521 11.3335 2.99704 11.0395 2.20452 10.7839C1.24583 10.4771 0.478874 10.3109 0.542787 9.77405C0.581135 9.49283 0.964612 9.21161 1.68044 8.91762Z"
+                  fill="#292929" />
               </g>
-            </svg>
-          </button>
-          <button class="button button--social icon--whatsapp">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.4174 1.25H10.4133C5.81849 1.25 2.08203 4.9875 2.08203 9.58333C2.08203 11.4062 2.66953 13.0958 3.66849 14.4677L2.62995 17.5635L5.83307 16.5396C7.15078 17.4125 8.72266 17.9167 10.4174 17.9167C15.0122 17.9167 18.7487 14.1781 18.7487 9.58333C18.7487 4.98854 15.0122 1.25 10.4174 1.25ZM15.2664 13.0177C15.0654 13.5854 14.2674 14.0562 13.631 14.1937C13.1956 14.2865 12.6268 14.3604 10.7122 13.5667C8.26328 12.5521 6.6862 10.0635 6.56328 9.90208C6.44557 9.74062 5.5737 8.58437 5.5737 7.38854C5.5737 6.19271 6.18099 5.61042 6.42578 5.36042C6.62682 5.15521 6.95911 5.06146 7.27786 5.06146C7.38099 5.06146 7.4737 5.06667 7.55703 5.07083C7.80182 5.08125 7.92474 5.09583 8.0862 5.48229C8.28724 5.96667 8.77682 7.1625 8.83516 7.28542C8.89453 7.40833 8.95391 7.575 8.87057 7.73646C8.79245 7.90312 8.7237 7.97708 8.60078 8.11875C8.47786 8.26042 8.3612 8.36875 8.23828 8.52083C8.12578 8.65312 7.9987 8.79479 8.14036 9.03958C8.28203 9.27917 8.77161 10.0781 9.49245 10.7198C10.4227 11.5479 11.1768 11.8125 11.4466 11.925C11.6477 12.0083 11.8872 11.9885 12.0341 11.8323C12.2206 11.6312 12.4508 11.2979 12.6852 10.9698C12.8518 10.7344 13.0622 10.7052 13.2831 10.7885C13.5081 10.8667 14.6987 11.4552 14.9435 11.5771C15.1883 11.7 15.3497 11.7583 15.4091 11.8615C15.4674 11.9646 15.4674 12.449 15.2664 13.0177Z"
-                fill="#292929"
-              />
-            </svg>
-          </button>
-          <button class="button button--social icon--vk">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Frame">
-                <path
-                  id="Vector"
-                  d="M11.3485 15.7619C4.85697 15.7619 1.15428 11.3468 1 4H4.25172C4.35853 9.39234 6.75578 11.6764 8.65459 12.1474V4H11.7164V8.6506C13.5915 8.45045 15.5615 6.33119 16.2261 4H19.2879C19.0375 5.20902 18.5383 6.35377 17.8216 7.36265C17.1048 8.37152 16.1859 9.22282 15.1224 9.86329C16.3096 10.4485 17.3581 11.2768 18.1989 12.2936C19.0397 13.3104 19.6535 14.4925 20 15.7619H16.6296C16.3186 14.6593 15.6865 13.6723 14.8125 12.9246C13.9385 12.1769 12.8615 11.7018 11.7164 11.5587V15.7619H11.3485Z"
-                  fill="#292929"
-                />
-              </g>
-            </svg>
-          </button>
-        </div>
-        <div class="social">
-          <button class="button button--back--big">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15 9L8 2M15 9L8 16M15 9H0"
-                stroke="#292929"
-                stroke-width="3"
-              />
-            </svg>
-          </button>
-
-          <button class="button button--back--small">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 6L16 12L10 18"
-                stroke="#292929"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <button class="catalog-button">
-          <span class="catalog-button__content catalog-button__content--right">
-            <span class="catalog-button__icon">
-              <svg
-                width="19"
-                height="22"
-                viewBox="0 0 19 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.1529 7.499C17.4338 7.93927 16.8382 8.5548 16.4217 9.28797C16.0052 10.0211 15.7816 10.848 15.7717 11.6911C15.7746 12.6401 16.0557 13.5673 16.5804 14.3581C17.105 15.1488 17.85 15.7683 18.7233 16.1397C18.379 17.2505 17.8694 18.3032 17.2118 19.2623C16.2708 20.6169 15.2869 21.9714 13.7898 21.9714C12.2927 21.9714 11.9076 21.1017 10.1823 21.1017C8.49983 21.1017 7.90094 22 6.5321 22C5.16326 22 4.20804 20.7452 3.11007 19.2053C1.65974 17.0481 0.862649 14.5182 0.814453 11.9192C0.814453 7.64161 3.59493 5.37457 6.33247 5.37457C7.7869 5.37457 8.99891 6.32979 9.91147 6.32979C10.7812 6.32979 12.1359 5.31742 13.7898 5.31742C14.6402 5.29548 15.4829 5.48298 16.2438 5.86341C17.0046 6.24384 17.6603 6.80553 18.1529 7.499ZM13.0056 3.50666C13.7347 2.64899 14.1474 1.56713 14.1748 0.441783C14.1761 0.29343 14.1617 0.145358 14.132 0C12.8796 0.122338 11.7215 0.719244 10.8953 1.66829C10.1592 2.49178 9.73089 3.54475 9.68326 4.64826C9.68381 4.78246 9.69816 4.91625 9.72606 5.04752C9.82479 5.06618 9.92503 5.07575 10.0255 5.07609C10.6027 5.03017 11.1645 4.86736 11.6768 4.59756C12.1891 4.32776 12.6412 3.95661 13.0056 3.50666Z"
-                  fill="#292929"
-                />
-              </svg>
-            </span>
-            <div class="catalog-button__text">Apple</div>
-          </span>
-          <span class="catalog-button__content catalog-button__content--left">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-opacity="0.4"
-            >
-              <path d="M7.5 15L12.5 10L7.5 5L7.5 15Z" fill="#292929" />
-            </svg>
-          </span>
+            </g>
+          </svg>
         </button>
-        <button class="catalog-button">
-          <span class="catalog-button__content catalog-button__content--right">
-            <span class="catalog-button__icon">
-              <svg
-                width="18"
-                height="25"
-                viewBox="0 0 18 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M18 21.1934C18 22.8503 16.6569 24.1934 15 24.1934H3C1.34314 24.1934 0 22.8503 0 21.1934V3.19336C0 1.53651 1.34314 0.193359 3 0.193359H15C16.6569 0.193359 18 1.53651 18 3.19336V21.1934ZM9 21.5684C10.0355 21.5684 10.875 20.729 10.875 19.6934C10.875 18.6578 10.0355 17.8184 9 17.8184C7.96446 17.8184 7.125 18.6578 7.125 19.6934C7.125 20.729 7.96446 21.5684 9 21.5684Z"
-                  fill="rgba(41, 41, 41, 0.4)"
-                />
-              </svg>
-            </span>
-            <div class="catalog-button__text">Cмартфоны</div>
-          </span>
-          <span class="catalog-button__content catalog-button__content--left">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.5 15L12.5 10L7.5 5L7.5 15Z"
-                fill="#292929"
-                fill-opacity="0.4"
-              />
-            </svg>
-          </span>
+        <button class="button button--social icon--whatsapp">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.4174 1.25H10.4133C5.81849 1.25 2.08203 4.9875 2.08203 9.58333C2.08203 11.4062 2.66953 13.0958 3.66849 14.4677L2.62995 17.5635L5.83307 16.5396C7.15078 17.4125 8.72266 17.9167 10.4174 17.9167C15.0122 17.9167 18.7487 14.1781 18.7487 9.58333C18.7487 4.98854 15.0122 1.25 10.4174 1.25ZM15.2664 13.0177C15.0654 13.5854 14.2674 14.0562 13.631 14.1937C13.1956 14.2865 12.6268 14.3604 10.7122 13.5667C8.26328 12.5521 6.6862 10.0635 6.56328 9.90208C6.44557 9.74062 5.5737 8.58437 5.5737 7.38854C5.5737 6.19271 6.18099 5.61042 6.42578 5.36042C6.62682 5.15521 6.95911 5.06146 7.27786 5.06146C7.38099 5.06146 7.4737 5.06667 7.55703 5.07083C7.80182 5.08125 7.92474 5.09583 8.0862 5.48229C8.28724 5.96667 8.77682 7.1625 8.83516 7.28542C8.89453 7.40833 8.95391 7.575 8.87057 7.73646C8.79245 7.90312 8.7237 7.97708 8.60078 8.11875C8.47786 8.26042 8.3612 8.36875 8.23828 8.52083C8.12578 8.65312 7.9987 8.79479 8.14036 9.03958C8.28203 9.27917 8.77161 10.0781 9.49245 10.7198C10.4227 11.5479 11.1768 11.8125 11.4466 11.925C11.6477 12.0083 11.8872 11.9885 12.0341 11.8323C12.2206 11.6312 12.4508 11.2979 12.6852 10.9698C12.8518 10.7344 13.0622 10.7052 13.2831 10.7885C13.5081 10.8667 14.6987 11.4552 14.9435 11.5771C15.1883 11.7 15.3497 11.7583 15.4091 11.8615C15.4674 11.9646 15.4674 12.449 15.2664 13.0177Z"
+              fill="#292929" />
+          </svg>
         </button>
-        <button class="catalog-button big">
-          <span class="catalog-button__content catalog-button__content--right">
-            <span class="catalog-button__icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 8.125C20 12.6124 16.3623 16.25 11.875 16.25C10.938 16.25 10.038 16.0914 9.20046 15.7995L5.00001 20L0 15L4.20049 10.7995C3.90864 9.96198 3.75003 9.06201 3.75003 8.125C3.75003 3.63769 7.38771 0 11.875 0C13.1508 0 14.3578 0.294004 15.432 0.81795L11.25 5V8.75H15L19.182 4.56795C19.706 5.64226 20 6.8493 20 8.125Z"
-                  fill="rgba(41, 41, 41, 0.4)"
-                />
-              </svg>
-            </span>
-            <div class="catalog-button__text">Cмартфоны</div>
-          </span>
+        <button class="button button--social icon--vk">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Frame">
+              <path id="Vector"
+                d="M11.3485 15.7619C4.85697 15.7619 1.15428 11.3468 1 4H4.25172C4.35853 9.39234 6.75578 11.6764 8.65459 12.1474V4H11.7164V8.6506C13.5915 8.45045 15.5615 6.33119 16.2261 4H19.2879C19.0375 5.20902 18.5383 6.35377 17.8216 7.36265C17.1048 8.37152 16.1859 9.22282 15.1224 9.86329C16.3096 10.4485 17.3581 11.2768 18.1989 12.2936C19.0397 13.3104 19.6535 14.4925 20 15.7619H16.6296C16.3186 14.6593 15.6865 13.6723 14.8125 12.9246C13.9385 12.1769 12.8615 11.7018 11.7164 11.5587V15.7619H11.3485Z"
+                fill="#292929" />
+            </g>
+          </svg>
         </button>
-        <button class="button сhose--option">256 Гб</button>
-        <button class="button сhose--option active">256 Гб</button>
-
-        <button class="button сhose--option--color">
-          <span class="color"></span>
-        </button>
-        <button class="button сhose--option--color active">
-          <span class="color"></span>
-        </button>
-
-        <div class="search">
-          <div class="search__input-wrapper">
-            <svg
-              class="search__icon search__icon--search"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4 9C4 6.23858 6.23858 4 9 4C11.7614 4 14 6.23858 14 9C14 11.7614 11.7614 14 9 14C6.23858 14 4 11.7614 4 9ZM9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C10.5723 16 12.0236 15.4816 13.1922 14.6064L16.2929 17.7071L17.7071 16.2929L14.6064 13.1922C15.4816 12.0236 16 10.5723 16 9C16 5.13401 12.866 2 9 2Z"
-                fill="#292929"
-              />
-            </svg>
-            <input
-              type="text"
-              value=""
-              class="search__input"
-              placeholder="Поиск"
-            />
-            <svg
-              class="search__icon search__icon--delete"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              onclick="document.querySelector('.search__input').value = '';"
-            >
-              <path
-                d="M15 5L5 15"
-                stroke="#292929"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5 5L15 15"
-                stroke="#292929"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="inputs">
-          <div class="inputs__field">
-            <input
-              class="inputs__input"
-              type="text"
-              id="name"
-              placeholder=" "
-            />
-            <label class="inputs__label" for="name">Ваше имя</label>
-          </div>
-        </div>
-        <div class="inputs">
-          <div class="inputs__field">
-            <input
-              class="inputs__input erorr"
-              type="text"
-              id="name"
-              placeholder=" "
-            />
-            <label class="inputs__label" for="name">Ваше имя</label>
-          </div>
-        </div>
-        <button class="tab">1</button>
-        <button class="tab">Новости</button>
-        <button class="tab active">1</button>
-        <button class="tab active">Новости</button>
       </div>
-      <div class="text">
-        <h1 class="heading--1">Heading 1</h1>
-        <h2 class="heading--2">Heading 2</h2>
-        <h3 class="heading--3 bold">Heading 3 Bold</h3>
-        <h3 class="heading--3 medium">Heading 3 Medium</h3>
-        <p class="price">price</p>
-        <p class="body bold">Body 1 Bold</p>
-        <p class="body medium">Body 1 medium</p>
-        <p class="body regular">Body 1 regular</p>
-        <p class="body-2 medium">Body 2 Regular</p>
-        <p class="label bold">Label Bold</p>
-        <p class="label regular"></p>
+      <div class="social">
+        <button class="button button--back--big">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 9L8 2M15 9L8 16M15 9H0" stroke="#292929" stroke-width="3" />
+          </svg>
+        </button>
+
+        <button class="button button--back--small">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 6L16 12L10 18" stroke="#292929" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </button>
       </div>
-    </div>
-    <div class="gray-bg">
-      <div class="container">
-        <div class="cards">
-          <div class="card">
-            <div class="card--item">
-              <div class="card--item__top">
-                <div class="card--item__top__label discount">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4.5C7 5.88071 5.88071 7 4.5 7C3.11929 7 2 5.88071 2 4.5C2 3.11929 3.11929 2 4.5 2C5.88071 2 7 3.11929 7 4.5Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M14 11.5C14 12.8807 12.8807 14 11.5 14C10.1192 14 9 12.8807 9 11.5C9 10.1192 10.1192 9 11.5 9C12.8807 9 14 10.1192 14 11.5Z"
-                      fill="white"
-                    />
-                    <path d="M3 13L13 3" stroke="white" stroke-width="2" />
-                  </svg>
-                  <p class="label bold color--white">– 15%</p>
-                </div>
-              </div>
-              <div class="card--item__img">
-                <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
-              </div>
-              <div class="card--item__bottom">
-                <div class="receiving">
-                  <div class="icon">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_1840_633)">
-                        <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1840_633">
-                          <rect width="16" height="16" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="text">Сегодня</div>
-                </div>
-                <div class="product--name">
-                  Apple iPhone 15 Pro Max 256Гб, натуральный титан
-                </div>
-                <div class="product--price">
-                  <div class="product--price__new color--red">110 990 ₽</div>
-                  <div class="product--price__old">130 500 ₽</div>
-                </div>
-                <button class="button button--buy bg--pink color--red">
-                  <span class="button__text">Купить</span>
-                </button>
-              </div>
+      <button class="catalog-button">
+        <span class="catalog-button__content catalog-button__content--right">
+          <span class="catalog-button__icon">
+            <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.1529 7.499C17.4338 7.93927 16.8382 8.5548 16.4217 9.28797C16.0052 10.0211 15.7816 10.848 15.7717 11.6911C15.7746 12.6401 16.0557 13.5673 16.5804 14.3581C17.105 15.1488 17.85 15.7683 18.7233 16.1397C18.379 17.2505 17.8694 18.3032 17.2118 19.2623C16.2708 20.6169 15.2869 21.9714 13.7898 21.9714C12.2927 21.9714 11.9076 21.1017 10.1823 21.1017C8.49983 21.1017 7.90094 22 6.5321 22C5.16326 22 4.20804 20.7452 3.11007 19.2053C1.65974 17.0481 0.862649 14.5182 0.814453 11.9192C0.814453 7.64161 3.59493 5.37457 6.33247 5.37457C7.7869 5.37457 8.99891 6.32979 9.91147 6.32979C10.7812 6.32979 12.1359 5.31742 13.7898 5.31742C14.6402 5.29548 15.4829 5.48298 16.2438 5.86341C17.0046 6.24384 17.6603 6.80553 18.1529 7.499ZM13.0056 3.50666C13.7347 2.64899 14.1474 1.56713 14.1748 0.441783C14.1761 0.29343 14.1617 0.145358 14.132 0C12.8796 0.122338 11.7215 0.719244 10.8953 1.66829C10.1592 2.49178 9.73089 3.54475 9.68326 4.64826C9.68381 4.78246 9.69816 4.91625 9.72606 5.04752C9.82479 5.06618 9.92503 5.07575 10.0255 5.07609C10.6027 5.03017 11.1645 4.86736 11.6768 4.59756C12.1891 4.32776 12.6412 3.95661 13.0056 3.50666Z"
+                fill="#292929" />
+            </svg>
+          </span>
+          <div class="catalog-button__text">Apple</div>
+        </span>
+        <span class="catalog-button__content catalog-button__content--left">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            fill-opacity="0.4">
+            <path d="M7.5 15L12.5 10L7.5 5L7.5 15Z" fill="#292929" />
+          </svg>
+        </span>
+      </button>
+      <button class="catalog-button">
+        <span class="catalog-button__content catalog-button__content--right">
+          <span class="catalog-button__icon">
+            <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 21.1934C18 22.8503 16.6569 24.1934 15 24.1934H3C1.34314 24.1934 0 22.8503 0 21.1934V3.19336C0 1.53651 1.34314 0.193359 3 0.193359H15C16.6569 0.193359 18 1.53651 18 3.19336V21.1934ZM9 21.5684C10.0355 21.5684 10.875 20.729 10.875 19.6934C10.875 18.6578 10.0355 17.8184 9 17.8184C7.96446 17.8184 7.125 18.6578 7.125 19.6934C7.125 20.729 7.96446 21.5684 9 21.5684Z"
+                fill="rgba(41, 41, 41, 0.4)" />
+            </svg>
+          </span>
+          <div class="catalog-button__text">Cмартфоны</div>
+        </span>
+        <span class="catalog-button__content catalog-button__content--left">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 15L12.5 10L7.5 5L7.5 15Z" fill="#292929" fill-opacity="0.4" />
+          </svg>
+        </span>
+      </button>
+      <button class="catalog-button big">
+        <span class="catalog-button__content catalog-button__content--right">
+          <span class="catalog-button__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 8.125C20 12.6124 16.3623 16.25 11.875 16.25C10.938 16.25 10.038 16.0914 9.20046 15.7995L5.00001 20L0 15L4.20049 10.7995C3.90864 9.96198 3.75003 9.06201 3.75003 8.125C3.75003 3.63769 7.38771 0 11.875 0C13.1508 0 14.3578 0.294004 15.432 0.81795L11.25 5V8.75H15L19.182 4.56795C19.706 5.64226 20 6.8493 20 8.125Z"
+                fill="rgba(41, 41, 41, 0.4)" />
+            </svg>
+          </span>
+          <div class="catalog-button__text">Cмартфоны</div>
+        </span>
+      </button>
+      <button class="button сhose--option">256 Гб</button>
+      <button class="button сhose--option active">256 Гб</button>
+
+      <button class="сhose--option--color">
+        <span class="color"></span>
+      </button>
+      <button class="сhose--option--color active">
+        <span class="color"></span>
+      </button>
+
+      <div class="search">
+        <div class="search__input-wrapper">
+          <svg class="search__icon search__icon--search" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4 9C4 6.23858 6.23858 4 9 4C11.7614 4 14 6.23858 14 9C14 11.7614 11.7614 14 9 14C6.23858 14 4 11.7614 4 9ZM9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C10.5723 16 12.0236 15.4816 13.1922 14.6064L16.2929 17.7071L17.7071 16.2929L14.6064 13.1922C15.4816 12.0236 16 10.5723 16 9C16 5.13401 12.866 2 9 2Z"
+              fill="#292929" />
+          </svg>
+          <input type="text" value="" class="search__input" placeholder="Поиск" />
+          <svg class="search__icon search__icon--delete" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg" onclick="document.querySelector('.search__input').value = '';">
+            <path d="M15 5L5 15" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 5L15 15" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="inputs__field">
+          <input class="inputs__input" type="text" id="name" placeholder=" " />
+          <label class="inputs__label" for="name">Ваше имя</label>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="inputs__field">
+          <input class="inputs__input erorr" type="text" id="name" placeholder=" " />
+          <label class="inputs__label" for="name">Ваше имя</label>
+        </div>
+      </div>
+      <button class="tab">1</button>
+      <button class="tab">Новости</button>
+      <button class="tab active">1</button>
+      <button class="tab active">Новости</button>
+      <div class="pikup">
+        <label for="pickup-location" class="pickup-option">
+          <div class="pickup-option__content">
+            <div class="pickup-option__main-text">
+              <p class="position">ТРК «Jazz Mall, ул. Герцена, 6</p>
+            </div>
+            <div class="pickup-option__sub-text">
+              <span class="pickup-option__icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1838_515)">
+                    <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1838_515">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Через 10 минут
+              </span>
+
+              </span>
+              <span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1838_519)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 9V3H9V7H12V9H7Z"
+                      fill="#292929" fill-opacity="0.2" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1838_519">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                10:00 ‒ 21:00
+              </span>
             </div>
           </div>
-          <div class="card">
-            <div class="card--item">
-              <div class="card--item__top">
-                <div class="card--item__top__label new">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_1840_739)">
-                      <path
-                        d="M12.5 0H13.5C13.5 1.38071 14.6193 2.5 16 2.5V3.5C14.6193 3.5 13.5 4.61929 13.5 6H12.5C12.5 4.61929 11.3807 3.5 10 3.5V2.5C11.3807 2.5 12.5 1.38071 12.5 0Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M5.5 3H7.5C7.5 6.03757 9.96243 8.5 13 8.5V10.5C9.96243 10.5 7.5 12.9624 7.5 16H5.5C5.5 12.9624 3.03757 10.5 0 10.5V8.5C3.03757 8.5 5.5 6.03757 5.5 3Z"
-                        fill="white"
-                      />
+        </label>
+        <input type="checkbox" class="pickup-option__radio" name="pickup-location">
+
+      </div>
+    </div>
+
+
+    <div class="text">
+      <h1 class="heading--1">Heading 1</h1>
+      <h2 class="heading--2">Heading 2</h2>
+      <h3 class="heading--3 bold">Heading 3 Bold</h3>
+      <h3 class="heading--3 medium">Heading 3 Medium</h3>
+      <p class="price">price</p>
+      <p class="body bold">Body 1 Bold</p>
+      <p class="body medium">Body 1 medium</p>
+      <p class="body regular">Body 1 regular</p>
+      <p class="body-2 medium">Body 2 Regular</p>
+      <p class="label bold">Label Bold</p>
+      <p class="label regular"></p>
+    </div>
+  </div>
+  <div class="gray-bg">
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="card--item">
+            <div class="card--item__top">
+              <div class="card--item__top__label discount">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 4.5C7 5.88071 5.88071 7 4.5 7C3.11929 7 2 5.88071 2 4.5C2 3.11929 3.11929 2 4.5 2C5.88071 2 7 3.11929 7 4.5Z"
+                    fill="white" />
+                  <path
+                    d="M14 11.5C14 12.8807 12.8807 14 11.5 14C10.1192 14 9 12.8807 9 11.5C9 10.1192 10.1192 9 11.5 9C12.8807 9 14 10.1192 14 11.5Z"
+                    fill="white" />
+                  <path d="M3 13L13 3" stroke="white" stroke-width="2" />
+                </svg>
+                <p class="label bold color--white">– 15%</p>
+              </div>
+            </div>
+            <div class="card--item__img">
+              <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
+            </div>
+            <div class="card--item__bottom">
+              <div class="receiving">
+                <div class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1840_633)">
+                      <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
                     </g>
                     <defs>
-                      <clipPath id="clip0_1840_739">
+                      <clipPath id="clip0_1840_633">
                         <rect width="16" height="16" fill="white" />
                       </clipPath>
                     </defs>
                   </svg>
-                  <p class="label bold color--white">Новинка</p>
                 </div>
+                <div class="text">Сегодня</div>
               </div>
-              <div class="card--item__img">
-                <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
+              <div class="product--name">
+                Apple iPhone 15 Pro Max 256Гб, натуральный титан
               </div>
-              <div class="card--item__bottom">
-                <div class="receiving">
-                  <div class="icon">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_1840_633)">
-                        <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1840_633">
-                          <rect width="16" height="16" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="text">Сегодня</div>
-                </div>
-                <div class="product--name">
-                  Apple iPhone 15 Pro Max 256Гб, натуральный титан
-                </div>
-                <div class="product--price">
-                  <div class="product--price__new">110 990 ₽</div>
-                </div>
-                <button class="button button--buy bg--gray">
-                  <span class="button__text">Купить</span>
-                </button>
+              <div class="product--price">
+                <div class="product--price__new color--red">110 990 ₽</div>
+                <div class="product--price__old">130 500 ₽</div>
               </div>
+              <button class="button button--buy bg--pink color--red">
+                <span class="button__text">Купить</span>
+              </button>
             </div>
           </div>
-          <div class="card">
-            <div class="card--item">
-              <div class="card--item__top">
-                <div class="card--item__top__label top">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+        </div>
+        <div class="card">
+          <div class="card--item">
+            <div class="card--item__top">
+              <div class="card--item__top__label new">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1840_739)">
                     <path
-                      d="M16 5C16 2.79086 14.2091 1 12 1C9.79086 1 8 2.79086 8 5C8 2.79086 6.20914 1 4 1C1.79086 1 0 2.79086 0 5C0 11.5 8 15 8 15C8 15 16 11.5 16 5Z"
-                      fill="#DF2023"
-                    />
-                  </svg>
-
-                  <p class="label bold">Топ продаж</p>
-                </div>
-              </div>
-              <div class="card--item__img">
-                <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
-              </div>
-              <div class="card--item__bottom">
-                <div class="receiving">
-                  <div class="icon">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_1840_633)">
-                        <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1840_633">
-                          <rect width="16" height="16" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="text">Сегодня</div>
-                </div>
-                <div class="product--name">
-                  Apple iPhone 15 Pro Max 256Гб, натуральный титан
-                </div>
-                <div class="product--price">
-                  <div class="product--price__new">110 990 ₽</div>
-                </div>
-                <button class="button button--buy bg--gray">
-                  <span class="button__text">Купить</span>
-                </button>
+                      d="M12.5 0H13.5C13.5 1.38071 14.6193 2.5 16 2.5V3.5C14.6193 3.5 13.5 4.61929 13.5 6H12.5C12.5 4.61929 11.3807 3.5 10 3.5V2.5C11.3807 2.5 12.5 1.38071 12.5 0Z"
+                      fill="white" />
+                    <path
+                      d="M5.5 3H7.5C7.5 6.03757 9.96243 8.5 13 8.5V10.5C9.96243 10.5 7.5 12.9624 7.5 16H5.5C5.5 12.9624 3.03757 10.5 0 10.5V8.5C3.03757 8.5 5.5 6.03757 5.5 3Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1840_739">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="label bold color--white">Новинка</p>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card--item">
-              <div class="card--item__top">
-                <div class="card--item__top__label product--date">
-                  <svg
-                    width="14"
-                    height="16"
-                    viewBox="0 0 14 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M7 0C7 0 14 3.5 14 9C14 12.8645 10.8684 15.9976 7.0045 16C7.77077 15.9989 8.53668 15.7158 9.12132 15.1508C10.2929 14.0184 10.2929 12.1826 9.12132 11.0503L7 9L4.87868 11.0503C3.70711 12.1826 3.70711 14.0184 4.87868 15.1508C5.46332 15.7158 6.22923 15.9989 6.9955 16C3.13157 15.9976 0 12.8645 0 9C0 5.68511 1.9795 3.53346 4 2L7 6V0Z"
-                      fill="white"
-                    />
+            <div class="card--item__img">
+              <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
+            </div>
+            <div class="card--item__bottom">
+              <div class="receiving">
+                <div class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1840_633)">
+                      <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1840_633">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
                   </svg>
+                </div>
+                <div class="text">Сегодня</div>
+              </div>
+              <div class="product--name">
+                Apple iPhone 15 Pro Max 256Гб, натуральный титан
+              </div>
+              <div class="product--price">
+                <div class="product--price__new">110 990 ₽</div>
+              </div>
+              <button class="button button--buy bg--gray">
+                <span class="button__text">Купить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card--item">
+            <div class="card--item__top">
+              <div class="card--item__top__label top">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 5C16 2.79086 14.2091 1 12 1C9.79086 1 8 2.79086 8 5C8 2.79086 6.20914 1 4 1C1.79086 1 0 2.79086 0 5C0 11.5 8 15 8 15C8 15 16 11.5 16 5Z"
+                    fill="#DF2023" />
+                </svg>
 
-                  <p class="label bold color--white">Товар дня</p>
-                </div>
+                <p class="label bold">Топ продаж</p>
               </div>
-              <div class="card--item__img">
-                <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
+            </div>
+            <div class="card--item__img">
+              <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
+            </div>
+            <div class="card--item__bottom">
+              <div class="receiving">
+                <div class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1840_633)">
+                      <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1840_633">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="text">Сегодня</div>
               </div>
-              <div class="card--item__bottom">
-                <div class="receiving">
-                  <div class="icon">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_1840_633)">
-                        <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1840_633">
-                          <rect width="16" height="16" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="text">Сегодня</div>
-                </div>
-                <div class="product--name">
-                  Apple iPhone 15 Pro Max 256Гб, натуральный титан
-                </div>
-                <div class="product--price">
-                  <div class="product--price__new">110 990 ₽</div>
-                </div>
-                <button class="button button--buy bg--gray">
-                  <span class="button__text">Купить</span>
-                </button>
+              <div class="product--name">
+                Apple iPhone 15 Pro Max 256Гб, натуральный титан
               </div>
+              <div class="product--price">
+                <div class="product--price__new">110 990 ₽</div>
+              </div>
+              <button class="button button--buy bg--gray">
+                <span class="button__text">Купить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card--item">
+            <div class="card--item__top">
+              <div class="card--item__top__label product--date">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 0C7 0 14 3.5 14 9C14 12.8645 10.8684 15.9976 7.0045 16C7.77077 15.9989 8.53668 15.7158 9.12132 15.1508C10.2929 14.0184 10.2929 12.1826 9.12132 11.0503L7 9L4.87868 11.0503C3.70711 12.1826 3.70711 14.0184 4.87868 15.1508C5.46332 15.7158 6.22923 15.9989 6.9955 16C3.13157 15.9976 0 12.8645 0 9C0 5.68511 1.9795 3.53346 4 2L7 6V0Z"
+                    fill="white" />
+                </svg>
+
+                <p class="label bold color--white">Товар дня</p>
+              </div>
+            </div>
+            <div class="card--item__img">
+              <img src="/src/assets/img/iphone.jpg" alt="iphone" srcset="" />
+            </div>
+            <div class="card--item__bottom">
+              <div class="receiving">
+                <div class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1840_633)">
+                      <path d="M6 10H0L10 0V6H16L6 16V10Z" fill="#FAC300" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1840_633">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="text">Сегодня</div>
+              </div>
+              <div class="product--name">
+                Apple iPhone 15 Pro Max 256Гб, натуральный титан
+              </div>
+              <div class="product--price">
+                <div class="product--price__new">110 990 ₽</div>
+              </div>
+              <button class="button button--buy bg--gray">
+                <span class="button__text">Купить</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

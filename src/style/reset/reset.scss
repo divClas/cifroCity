@@ -11,6 +11,8 @@
 	color: rgba(41, 41, 41, 1);
 	font-size: 0.875rem;
 	font-weight: 400;
+	overflow-x: hidden;
+	box-sizing: border-box;
 }
 * {
 	padding: 0px;
