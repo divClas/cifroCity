@@ -1,21 +1,25 @@
-import jQuery from "jquery";
-window.$ = jQuery;
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.button--catalog');
+  buttons.forEach(button => {
+    button.addEventListener('mouseover', function () {
+      const icon = button.querySelector('.icon');
+      icon.style.opacity = 0;
+      setTimeout(() => {
+        icon.src = '/src/assets/img/menu-open.svg';
+        icon.style.opacity = 1;
+      }, 150);
+    });
 
-$(document).ready(function () {
-  $(".button--catalog").hover(
-    function () {
-      $(this)
-        .find(".icon")
-        .fadeOut(150, function () {
-          $(this).attr("src", "/src/assets/img/menu-open.svg").fadeIn(150);
-        });
-    },
-    function () {
-      $(this)
-        .find(".icon")
-        .fadeOut(150, function () {
-          $(this).attr("src", "/src/assets/img/menu.svg").fadeIn(150);
-        });
-    }
-  );
+    button.addEventListener('mouseout', function () {
+      const icon = button.querySelector('.icon');
+      icon.style.opacity = 0;
+      setTimeout(() => {
+        icon.src = '/src/assets/img/menu.svg';
+        icon.style.opacity = 1;
+      }, 150);
+    });
+  });
+
+
+  
 });

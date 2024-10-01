@@ -278,7 +278,6 @@
     max-width: 22.5rem;
     width: 100%;
     transition: border 0.15s;
-
     &:hover {
       border: 0.0625rem solid $primaryActiveGray;
     }
@@ -686,4 +685,75 @@
 .color--white {
   color: $white;
   z-index: 2;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  padding: 2.5rem 0rem;
+
+}
+
+.link {
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primaryActiveGray;
+  transition: color 0.15s;
+
+  &:hover {
+    color: $redAccentsHover;
+  }
+
+  &.disabled {
+    color: $primaryGray;
+    cursor: not-allowed;
+  }
+
+  &.link--icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &.fs--16 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+
+  &.link--gray {
+    color: $grayTertiary;
+    transition: color 0.15s;
+
+    &:hover {
+      color: $redAccentsHover;
+    }
+  }
+
+
+}
+
+.link--filter {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  transition: color 0.15s, font-weight 0.15s;
+  color: $grayTertiary;
+
+  &.active {
+    font-weight: 600;
+    color: $primaryActiveGray;
+    pointer-events: none;
+  }
+
+  &:hover:not(.active) {
+    color: $primaryActiveGray;
+  }
+
 }
